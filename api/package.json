@@ -1,16 +1,16 @@
 {
-  "name": "api",
+  "name": "cubonetwork-fullstack-challenge",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "This project is to solve the challenge to work as software engineer at Cubo.",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "devstart": "nodemon server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["javascript", "vanilla", "node", "fullstack"],
+  "author": "Thales Rodrigues",
+  "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",

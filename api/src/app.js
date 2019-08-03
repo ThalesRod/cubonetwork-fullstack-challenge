@@ -15,13 +15,17 @@ mongoose.connect(localDatabase.local.localUrl)
   .then(() => {
     console.log('Database connected with success!');
   }, (err) => {
-    console.log(`MongoDB connection error: ${err}`);
+    console.error(`MongoDB connection error: ${err}`);
     process.exit();
   }
 );
 
+const personRouter = require('./routes/person.routes');
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
+
+app.use('/api', personRouter);
 
 module.exports = app;
