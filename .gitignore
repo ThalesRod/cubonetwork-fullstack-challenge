@@ -1,5 +1,5 @@
 # API Config
-api/src/config/*.js
+api/src/config/
 
 
 # Logs
