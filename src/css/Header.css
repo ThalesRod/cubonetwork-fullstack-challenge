@@ -1,0 +1,42 @@
+.Header {
+  width: 100%;
+  display: inline;
+}
+
+.Header-container {
+  height: 10vh;
+  min-height: 90px;
+  background-color: #00B8E2;
+  text-align: center;
+}
+
+.Header-form {
+  height: 45%;
+  position: relative;
+  top: calc((100% - 45%) / 2);
+}
+
+.Header-form input, button {
+  height: 100%;
+  width: 15%;
+  border-radius: 0.3vh;
+  margin: 0 0.5vw;
+}
+
+.Header-form input {
+  padding-left: 1vw;
+}
+
+.Header-form button {
+  width: 7.5%;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #FFF;
+  color: #FFF;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.Header-form button:hover {
+  background-color: rgba(255, 255, 255, 0.90);
+  color: #333;
+}

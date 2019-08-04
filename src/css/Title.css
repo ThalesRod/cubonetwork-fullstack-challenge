@@ -1,0 +1,34 @@
+.Title {
+  height: 20vh;
+  text-align: center;
+}
+
+.Title-title {
+  display: block;
+  color: #333;
+  font-size: 30px;
+  margin: 5vh 0 1.5vh 0;
+}
+
+.Title-subtitle {
+  display: block;
+}
+
+.Title-refreshButton {
+  height: 25%;
+  min-height: 30px;
+  width: 15%;
+  max-width: 80px;
+  border-radius: 0.5vh;
+  margin: 2vh 0.5vw;
+  background-color: #00B8E2;
+  color: #FFF;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.Title-refreshButton:hover {
+  background-color: #008FB0;
+  border: 1px solid #005F75;
+  color: #FFF;
+}

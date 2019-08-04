@@ -2,9 +2,10 @@
   "name": "cubonetwork-fullstack-challenge",
   "version": "1.0.0",
   "description": "This project is to solve the challenge to work as software engineer at Cubo.",
-  "main": "index.js",
+  "main": "src/app/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server --port=4800 --no-browser"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,6 @@
   "bugs": {
     "url": "https://github.com/ThalesRod/cubonetwork-fullstack-challenge/issues"
   },
-  "homepage": "https://github.com/ThalesRod/cubonetwork-fullstack-challenge#readme"
+  "homepage": "https://github.com/ThalesRod/cubonetwork-fullstack-challenge#readme",
+  "dependencies": {}
 }

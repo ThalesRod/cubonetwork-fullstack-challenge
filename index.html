@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="This project is to solve the challenge to work as software engineer at Cubo." />
+
+  <meta property="og:title" content="Cubo Network">
+  <meta property="og:description" content="This project is to solve the challenge to work as software engineer at Cubo.">
+
+  <title>Cubo Network</title>
+
+  <link rel="stylesheet" href="src/css/reset.css">
+  <link rel="stylesheet" href="src/css/Header.css">
+  <link rel="stylesheet" href="src/css/Title.css">
+  <link rel="stylesheet" href="src/css/Table.css">
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="src/app/app.js" type="module"></script>
+
+</head>
+
+<body>
+
+  <header class="Header">
+    <div class="Header-container">
+      <form class="Header-form">
+        <input id="formFirstName" type="text" placeholder="First name" required>
+        <input id="formLastName" type="text" placeholder="Last name" required>
+        <input id="formParticipation" type="number" placeholder="Participation" required>
+        <button class="Header-sendButton" type="submit">SEND</button>
+      </form>
+    </div>
+  </header>
+  
+  <div class="Title">
+    <span class="Title-title">Data</span>
+    <span class="Title-subtitle">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    </span>
+    <button class="Title-refreshButton">Refresh</button>
+  </div>
+
+  <div>
+    <div class="Table">
+      <table>
+        <thead class="Table-head">
+          <tr>
+            <td></td>
+            <td>First name</td>
+            <td>Last name</td>
+            <td>Participation</td>
+          </tr>
+        </thead>
+        <tbody class="Table-content">
+            <tr>
+              <td></td>
+              <td colspan="3" style="text-align: center;">Loading...</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="PieChart">
+      
+    </div>
+    
+  </div>
+
+</body>
+
+</html>
