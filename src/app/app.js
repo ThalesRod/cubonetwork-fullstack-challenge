@@ -1,15 +1,14 @@
 'use strict';
 
-const $ = document.querySelector.bind(document);
+import apiConfig from './service/apiConfig';
 
-const url = 'http://localhost:3000/api/person';
+const $ = document.querySelector.bind(document);
 
 const renderTable = (personsData) => {
   if (!personsData) return;
 
-  const $tableContent = $('.Table-content');
-
-  $tableContent.innerHTML = personsData.map(({ firstName, lastName, participation }, index) => {
+  $('.Table-content').innerHTML = personsData.map(({ firstName, lastName, participation }, index) => {
+    // Formating each person data in table rows
     return `
     <tr>
       <td>${index + 1}</td>
@@ -23,6 +22,7 @@ const renderTable = (personsData) => {
 
 const sendPersonData = async () => {
 
+  // Gettting form data
   const $firstName      = $('#formFirstName');
   const $lastName       = $('#formLastName');
   const $participation  = $('#formParticipation');
@@ -33,15 +33,17 @@ const sendPersonData = async () => {
     participation:  $participation.value,
   };
 
+  // Cleaning form
   $firstName.value      = '';
   $lastName.value       = '';
   $participation.value  = '';
 
-  return await axios.post(url, formData);
+  // Send form data to API
+  return await axios.post(apiConfig.path, formData);
 };
 
 const app = async () => {
-  const { data: personsData } = await axios.get(url);
+  const { data: personsData } = await axios.get(apiConfig.path);
   renderTable(personsData);
 };
 
@@ -52,7 +54,7 @@ $('.Header-sendButton')
 
     sendPersonData();
   
-    const { data: personsData } = await axios.get(url);
+    const { data: personsData } = await axios.get(apiConfig.path);
     renderTable(personsData);
 });
 
